@@ -48,13 +48,4 @@ public interface UserService extends IService<User> {
      * @date: 2023/5/2 13:53
      */
     int userLogout(HttpServletRequest request);
-
-    /**
-     * @description: 根据标签搜索用户
-     * @param tagNameList
-     * @return java.util.List<com.example.usercenter.model.domain.User>
-     * @date: 2023/5/4 21:28
-     */
-//    List<User> searchUsersByTags(List<String> tagNameList);
-
 }
