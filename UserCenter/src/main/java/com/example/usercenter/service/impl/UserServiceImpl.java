@@ -182,21 +182,6 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
         request.getSession().removeAttribute(USER_LOGIN_STATE);
         return 1;
     }
-
-//    @Override
-//    public List<User> searchUsersByTags(List<String> tagNameList) {
-//        if(CollectionUtils.isEmpty(tagNameList)){
-//            throw new BusinessException(ErrorCode.PARAMS_ERROR);
-//        }
-//        QueryWrapper<User> wrapper = new QueryWrapper<>();
-//        for (String tagName : tagNameList) {
-//            wrapper = wrapper.like("tags", tagName);
-//        }
-//        List<User> userList = userMapper.selectList(wrapper);
-//        return userList.stream().map(this::getSafeUser).collect(Collectors.toList());
-//    }
-
-
 }
 
 
